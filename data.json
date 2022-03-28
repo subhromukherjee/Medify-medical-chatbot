@@ -1,0 +1,578 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "booking",
+         "patterns": ["book an appointment", "book hospital", "hospital booking", "contact hospital" ],
+         "responses": ["Enter the City you want to book in"],
+         "context": ["City"]
+        },
+        {"tag": "City",
+         "patterns":["Delhi","Mumbai","Kolkata"
+        ,"Bangalore"
+        ,"Chennai"
+        ,"Hyderabad"
+        ,"Pune"
+        ,"Ahmedabad"
+        ,"Surat"
+        ,"Lucknow"
+        ,"Jaipur"
+        ,"Cawnpore"
+        ,"Mirzapur"
+        ,"Nagpur"
+        ,"Ghaziabad"
+        ,"Indore"
+        ,"Vadodara"
+        ,"Vishakhapatnam"
+        ,"Bhopal"
+        ,"Chinchvad"
+        ,"Patna"
+        ,"Ludhiana"
+        ,"agra"
+        ,"Kalyan"
+        ,"Madurai"
+        ,"Jamshedpur"
+        ,"Nasik"
+        ,"Faridabad"
+        ,"Aurangabad"
+        ,"Rajkot"
+        ,"Meerut"
+        ,"Jabalpur"
+        ,"Thane"
+        ,"Dhanbad"
+        ,"Allahabad"
+        ,"Varanasi"
+        ,"Srinagar"
+        ,"Amritsar"
+        ,"Aligarh"
+        ,"Bhiwandi"
+        ,"Gwalior"
+        ,"Bhilai"
+        ,"Haora"
+        ,"Ranchi"
+        ,"Bezwada"
+        ,"Chandigarh"
+        ,"Mysore"
+        ,"Raipur"
+        ,"Kota"
+        ,"Bareilly"
+        ,"Jodhpur"
+        ,"Coimbatore"
+        ,"Dispur"
+        ,"Guwahati"
+        ,"Solapur"
+        ,"Trichinopoly"
+        ,"Hubli"
+        ,"Jalandhar"
+        ,"Bhubaneshwar"
+        ,"Bhayandar"
+        ,"Moradabad"
+        ,"Kolhapur"
+        ,"Thiruvananthapuram"
+        ,"Saharanpur"
+        ,"Warangal"
+        ,"Salem"
+        ,"Malegaon"
+        ,"Kochi"
+        ,"Gorakhpur"
+        ,"Shimoga"
+        ,"Tiruppur"
+        ,"Guntur"
+        ,"Raurkela"
+        ,"Mangalore"
+        ,"Nanded"
+        ,"Cuttack"
+        ,"Chanda"
+        ,"Dehra Dun"
+        ,"Durgapur"
+        ,"asansol"
+        ,"Bhavnagar"
+        ,"Amravati"
+        ,"Nellore"
+        ,"Ajmer"
+        ,"Tinnevelly"
+        ,"Bikaner"
+        ,"Agartala"
+        ,"Ujjain"
+        ,"Jhansi"
+        ,"Ulhasnagar"
+        ,"Davangere"
+        ,"Jammu"
+        ,"Belgaum"
+        ,"Gulbarga"
+        ,"Jamnagar"
+        ,"Dhulia"
+        ,"Gaya"
+        ,"Jalgaon"
+        ,"Kurnool"
+        ,"Udaipur"
+        ,"Bellary"
+        ,"Sangli"
+        ,"Tuticorin"
+        ,"Calicut"
+        ,"Akola"
+        ,"Bhagalpur"
+        ,"Sikar"
+        ,"Tumkur"
+        ,"Quilon"
+        ,"Muzaffarnagar"
+        ,"Bhilwara"
+        ,"Nizamabad"
+        ,"Bhatpara"
+        ,"Kakinada"
+        ,"Parbhani"
+        ,"Panihati"
+        ,"Latur"
+        ,"Rohtak"
+        ,"Rajapalaiyam"
+        ,"Ahmadnagar"
+        ,"Cuddapah"
+        ,"Rajahmundry"
+        ,"Alwar"
+        ,"Muzaffarpur"
+        ,"Bilaspur"
+        ,"Mathura"
+        ,"Kamarhati"
+        ,"Patiala"
+        ,"Saugor"
+        ,"Bijapur"
+        ,"Brahmapur"
+        ,"Shahjanpur"
+        ,"Trichur"
+        ,"Barddhaman"
+        ,"Kulti"
+        ,"Sambalpur"
+        ,"Purnea"
+        ,"Hisar"
+        ,"Firozabad"
+        ,"Bidar"
+        ,"Rampur"
+        ,"Shiliguri"
+        ,"Bali"
+        ,"Panipat"
+        ,"Karimnagar"
+        ,"Bhuj"
+        ,"Ichalkaranji"
+        ,"Tirupati"
+        ,"Hospet"
+        ,"aizawl"
+        ,"Sannai"
+        ,"Barasat"
+        ,"Ratlam"
+        ,"Handwara"
+        ,"Drug"
+        ,"Imphal"
+        ,"Anantapur"
+        ,"Etawah"
+        ,"Raichur"
+        ,"Ongole"
+        ,"Bharatpur"
+        ,"Begusarai"
+        ,"Sonipat"
+        ,"Ramgundam"
+        ,"Hapur"
+        ,"Uluberiya"
+        ,"Porbandar"
+        ,"Pali"
+        ,"Vizianagaram"
+        ,"Puducherry"
+        ,"Karnal"
+        ,"Nagercoil"
+        ,"Tanjore"
+        ,"Sambhal"
+        ,"Naihati"
+        ,"Secunderabad"
+        ,"Kharagpur"
+        ,"Dindigul"
+        ,"Shimla"
+        ,"Ingraj Bazar"
+        ,"Ellore"
+        ,"Puri"
+        ,"Haldia"
+        ,"Nandyal"
+        ,"Bulandshahr"
+        ,"Chakradharpur"
+        ,"Bhiwani"
+        ,"Gurgaon"
+        ,"Burhanpur"
+        ,"Khammam"
+        ,"Madhyamgram"
+        ,"Ghandinagar"
+        ,"Baharampur"
+        ,"Mahbubnagar"
+        ,"Mahesana"
+        ,"adoni"
+        ,"Raiganj"
+        ,"Bhusaval"
+        ,"Bahraigh"
+        ,"Shrirampur"
+        ,"Tonk"
+        ,"Sirsa"
+        ,"Jaunpur"
+        ,"Madanapalle"
+        ,"Hugli"
+        ,"Vellore"
+        ,"Alleppey"
+        ,"Cuddalore"
+        ,"Deo"
+        ,"Chirala"
+        ,"Machilipatnam"
+        ,"Medinipur"
+        ,"Baramula"
+        ,"Chandannagar"
+        ,"Fatehpur"
+        ,"Udipi"
+        ,"Tenali"
+        ,"Sitalpur"
+        ,"Conjeeveram"
+        ,"Proddatur"
+        ,"Navsari"
+        ,"Godhra"
+        ,"Budaun"
+        ,"Chittoor"
+        ,"Haripur"
+        ,"Saharsa"
+        ,"Vidisha"
+        ,"Pathankot"
+        ,"Nalgonda"
+        ,"Dibrugarh"
+        ,"Balurghat"
+        ,"Krishnanagar"
+        ,"Fyzabad"
+        ,"Silchar"
+        ,"Shantipur"
+        ,"Hindupur"
+        ,"Erode"
+        ,"Jamuria"
+        ,"Habra"
+        ,"Ambala"
+        ,"Mauli"
+        ,"Kolar"
+        ,"Shillong"
+        ,"Bhimavaram"
+        ,"New Delhi"
+        ,"Mandsaur"
+        ,"Kumbakonam"
+        ,"Tiruvannamalai"
+        ,"Chicacole"
+        ,"Bankura"
+        ,"Mandya"
+        ,"Hassan"
+        ,"Yavatmal"
+        ,"Pilibhit"
+        ,"Palghat"
+        ,"Abohar"
+        ,"Palakollu"
+        ,"Kanchrapara"
+        ,"Port Blair"
+        ,"Alipur Duar"
+        ,"Hathras"
+        ,"Guntakal"
+        ,"Navadwip"
+        ,"Basirhat"
+        ,"Halisahar"
+        ,"Rishra"
+        ,"Dharmavaram"
+        ,"Baidyabati"
+        ,"Darjeeling"
+        ,"Sopur"
+        ,"Gudivada"
+        ,"Adilabad"
+        ,"Titagarh"
+        ,"Chittaurgarh"
+        ,"Narasaraopet"
+        ,"Dam Dam"
+        ,"Valparai"
+        ,"Osmanabad"
+        ,"Champdani"
+        ,"Bangaon"
+        ,"Khardah"
+        ,"Tadpatri"
+        ,"Jalpaiguri"
+        ,"Suriapet"
+        ,"Tadepallegudem"
+        ,"Bansbaria"
+        ,"Negapatam"
+        ,"Bhadreswar"
+        ,"Chilakalurupet"
+        ,"Kalyani"
+        ,"Gangtok"
+        ,"Kohima"
+        ,"Khambhat"
+        ,"Aurangabad"
+        ,"Emmiganur"
+        ,"Rayachoti"
+        ,"Kavali"
+        ,"Mancheral"
+        ,"Kadiri"
+        ,"Ootacamund"
+        ,"Anakapalle"
+        ,"Sirsilla"
+        ,"Kamareddipet"
+        ,"Paloncha"
+        ,"Kottagudem"
+        ,"Tanuku"
+        ,"Bodhan"
+        ,"Karur"
+        ,"Mangalagiri"
+        ,"Kairana"
+        ,"Markapur"
+        ,"Malaut"
+        ,"Bapatla"
+        ,"Badvel"
+        ,"Jorhat"
+        ,"Koratla"
+        ,"Pulivendla"
+        ,"Jaisalmer"
+        ,"Tadepalle"
+        ,"Armur"
+        ,"Jatani"
+        ,"Gadwal"
+        ,"Nagari"
+        ,"Wanparti"
+        ,"Ponnuru"
+        ,"Vinukonda"
+        ,"Itanagar"
+        ,"Tezpur"
+        ,"Narasapur"
+        ,"Kothapet"
+        ,"Macherla"
+        ,"Kandukur"
+        ,"Samalkot"
+        ,"Bobbili"
+        ,"Sattenapalle"
+        ,"Vrindavan"
+        ,"Mandapeta"
+        ,"Belampalli"
+        ,"Bhimunipatnam"
+        ,"Nandod"
+        ,"Pithapuram"
+        ,"Punganuru"
+        ,"Puttur"
+        ,"Jalor"
+        ,"Palmaner"
+        ,"Dholka"
+        ,"Jaggayyapeta"
+        ,"Tuni"
+        ,"Amalapuram"
+        ,"Jagtial"
+        ,"Vikarabad"
+        ,"Venkatagiri"
+        ,"Sihor"
+        ,"Jangaon"
+        ,"Mandamari"
+        ,"Metpalli"
+        ,"Repalle"
+        ,"Bhainsa"
+        ,"Jasdan"
+        ,"Jammalamadugu"
+        ,"Rameswaram"
+        ,"Addanki"
+        ,"Nidadavole"
+        ,"Bodupal"
+        ,"Rajgir"
+        ,"Rajaori"
+        ,"Naini Tal"
+        ,"Channarayapatna"
+        ,"Maihar"
+        ,"Panaji"
+        ,"Junnar"
+        ,"Amudalavalasa"
+        ,"Daman"
+        ,"Kovvur"
+        ,"Solan"
+        ,"Dwarka"
+        ,"Pathanamthitta"
+        ,"Kodaikanal"
+        ,"Udhampur"
+        ,"Giddalur"
+        ,"Yellandu"
+        ,"Shrirangapattana"
+        ,"Angamali"
+        ,"Umaria"
+        ,"Fatehpur Sikri"
+        ,"Mangur"
+        ,"Pedana"
+        ,"Uran"
+        ,"Chimakurti"
+        ,"Devarkonda"
+        ,"Bandipura"
+        ,"Silvassa"
+        ,"Pamidi"
+        ,"Narasannapeta"
+        ,"Jaynagar-Majilpur"
+        ,"Khed Brahma"
+        ,"Khajuraho"
+        ,"Koilkuntla"
+        ,"Diu"
+        ,"Kulgam"
+        ,"Gauripur"
+        ,"Abu"
+        ,"Curchorem"
+        ,"Kavaratti"
+        ,"Panchkula"
+        ,"Kagaznagar"],
+        "responses": ["Ok, Now Enter the month you want to book in"],
+        "context": ["Month"]
+        },
+        {"tag": "Month",
+         "patterns": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+         "responses": ["Ok, Now enter the date you are comfortable with"],
+         "context": ["Date"]
+        },
+        {"tag": "Date",
+         "patterns": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"],
+         "responses": ["Ok, I have booked an appointment with the doctor at this date"],
+         "context": ["Confirm"]
+        },
+        {
+        "tag":"age",
+        "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
+        "responses":["I get reborn after every compilation","hey!","my owners are averagely 20 years!"]
+        },
+        {
+        "tag":"name",
+        "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
+        "responses":["you can call me Medify!","i am Medify!","i am Medify your medical assistant"]
+        },
+        {
+        "tag":"common cold symptoms",
+        "patterns": ["Runny or stuffy nose",
+        "Sore throat",
+        "Cough",
+        "Congestion",
+        "Slight body aches or a mild headache",
+        "Sneezing",
+        "Low-grade fever",
+        "Generally feeling unwell (malaise)"],
+        "responses":["It seems that you are suffering from common cold"]
+        },
+        {
+        "tag":"fever symptoms",
+        "patterns":["Sweating",
+        "Chills and shivering",
+        "Headache",
+        "Muscle aches",
+        "Loss of appetite",
+        "Irritability",
+        "Dehydration",
+        "General weakness"],
+        "responses":["It seems that you are suffering from fever"]
+        },
+        {
+        "tag":"Diabetes symptoms",
+        "patterns":["increased hunger",
+        "increased thirst",
+        "weight loss",
+        "frequent urination",
+        "blurry vision",
+        "extreme fatigue"],
+        "responses":["It seems that you are suffering from Diabetes"]
+        },
+        {
+        "tag":"Depression symptoms",
+        "patterns":["Hopeless outlook",
+        "Lost interest",
+        "Increased fatigue",
+        "sleep problem",
+        "Anxiety",
+        "change in weight",
+        "Looking at death"],
+        "responses":["It seem that you are suffering from depression"]
+        },
+        {
+        "tag":"Asthma symptoms",
+        "patterns":["coughing",
+        "tightness in the chest",
+        "shortness of breath",
+        "difficulty talking",
+        "panic",
+        "fatigue"],
+        "responses":["It seem that you are suffering from Asthma"]
+        },
+        {
+        "tag":"common cold prevention",
+        "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
+        "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+        },
+        {
+        "tag":"fever prevention",
+        "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
+        "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+        },
+        {
+        "tag":"diabetes prevention",
+        "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
+        "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+        },
+        {
+        "tag":"depression prevention",
+        "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+        "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+        },
+        {
+        "tag":"asthma prevention",
+        "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
+        "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+        },
+        {
+        "tag":"Consultation",
+        "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+        "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+        },
+        {
+        "tag": "schizophrenia",
+        "patterns": [
+                "I think I have schizophrenia",
+                "What is schizophrenia?",
+                "Tell me about schizophrenia",
+                "Can I have some information about schizophrenia?",
+                "How do I support a loved one with schizophrenia?",
+                "How do I fix my schizophrenia?"
+        ],
+        "responses": [
+                "I see that you want to learn more about schizophrenia, and how to support yourself or your loved ones. At the higest level, Schizophrenia is a serious mental disorder in which people interpret reality abnormally. Schizophrenia may result in some combination of hallucinations, delusions, and extremely disordered thinking and behavior that impairs daily functioning, and can be disabling. People with schizophrenia require lifelong treatment. Early treatment may help get symptoms under control before serious complications develop and may help improve the long-term outlook. If you believe you have symptoms of schizophrenia, and/or you have various risk factors that increase the likelihood of schizophrenia, please consult a family doctor and/or psychiatrist for a diagnosis and treatment plan specific for the individual."
+        ]
+        },
+        {
+        "tag": "funny",
+        "patterns": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?"
+        ],
+        "responses": [
+                "Of course! Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison!",
+                "I invented a new word! Plagiarism!"
+        ]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
